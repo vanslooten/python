@@ -7,7 +7,7 @@ class Fruit:
         self.price = price # in euros
 
     def info(self):
-        return f"Fruit: {self.name}, Color: {self.color}, Price: ${self.price:.2f}" 
+        return f"Fruit: {self.name}, Color: {self.color}, Price: €{self.price:.2f}" 
 
 # Example usage
 if __name__ == "__main__":
