@@ -30,3 +30,6 @@ print("Mean:", convert_to_cm(df['Height(Inches)'].mean()) )
 print("Median:", convert_to_cm(df['Height(Inches)'].median()) )
 print("Std Dev:", convert_to_cm(df['Height(Inches)'].std()) )
 print("Variance:", convert_to_cm(df['Height(Inches)'].var()) )
+
+# or use describe() on the Height column:
+print(df['Height(Inches)'].describe())
