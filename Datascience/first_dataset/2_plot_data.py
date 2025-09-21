@@ -26,3 +26,12 @@ plt.ylabel('Frequency')
 # show the plot
 plt.show()
 
+"""
+plot parameters explained:
+alpha:
+    Transparency of dots (between 0 and 1). 1 is fully opaque, 0 is fully transparent.
+bins:
+    When you create a histogram, pandas takes your numerical data and divides the entire range of values into a series of non-overlapping intervals,
+    which are the bins. It then counts how many data points fall into each bin.
+    The height of each bar in the histogram corresponds to the count (or frequency) of values within that specific bin.
+"""
