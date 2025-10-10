@@ -1,5 +1,6 @@
 # Dash Example: 5 Steps to Build a Simple Interactive Dashboard
-# 2nd version with external CSS
+# 2nd version, updates:
+# - with external CSS
 # .css files will automatically be included from the assets directory (in alphanumerical order).
 
 # 5 steps:
@@ -20,15 +21,11 @@ import plotly.express as px
 
 # ---------------------------------------------------------------------------------
 # 4. Data Flow (Load Data Once)
-# This step loads the dataset at the start of the script, as a gloval variable.
+# This step loads the dataset at the start of the script, as a global variable.
 # This ensures the data is loaded only once when the app starts,
 # rather than on every user interaction.
 # ---------------------------------------------------------------------------------
-df = pd.DataFrame({
-    'Year': [2020, 2020, 2020, 2021, 2021, 2021],
-    'Month': ['Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar'],
-    'Sales': [100, 150, 120, 200, 220, 250]
-})
+df = pd.read_csv('sales_data.csv')
 
 # ---------------------------------------------------------------------------------
 # 0. Setup the Dash app
@@ -91,4 +88,3 @@ def update_graph(selected_year):
 
 if __name__ == '__main__':
     app.run(debug=True)
-

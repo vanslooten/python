@@ -1,5 +1,7 @@
 # Dash Example: 5 Steps to Build a Simple Interactive Dashboard
-
+# Simple interactive dashboard that allows a user to select a year and
+# updates a bar chart showing sales data for the chosen year.
+#
 # 5 steps:
 # 0. Load necessary libraries, setup the app, and run the app
 # 1. The Dash Layout (Frontend Structure)
@@ -18,15 +20,13 @@ import plotly.express as px
 
 # ---------------------------------------------------------------------------------
 # 4. Data Flow (Load Data Once)
-# This step loads the dataset at the start of the script, as a gloval variable.
+# This step loads the dataset at the start of the script, as a global variable.
 # This ensures the data is loaded only once when the app starts,
 # rather than on every user interaction.
 # ---------------------------------------------------------------------------------
-df = pd.DataFrame({
-    'Year': [2020, 2020, 2020, 2021, 2021, 2021],
-    'Month': ['Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar'],
-    'Sales': [100, 150, 120, 200, 220, 250]
-})
+# Load data from CSV (externalized from the previous inline DataFrame).
+# The file `sales_data.csv` should be in the same directory as this script.
+df = pd.read_csv('sales_data.csv')
 
 # ---------------------------------------------------------------------------------
 # 0. Setup the Dash app
@@ -58,7 +58,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f0f0', 'padding': '20px'}, c
             id='year-selector',
             # Dynamically populate options from the DataFrame for best practice
             options=[{'label': str(y), 'value': y} for y in df['Year'].unique()],
-            value=2021,  # Set an initial value
+            value=2022,  # Set an initial value (default to newest year)
             style={'width': '200px', 'marginTop': '5px'}
         ),
     ], style={'marginBottom': '20px'}),
