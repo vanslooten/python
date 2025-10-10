@@ -1,0 +1,25 @@
+.main-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+.dropdown-label {
+    font-weight: bold;
+}
+
+.year-dropdown {
+    width: 200px !important;
+    margin-top: 5px;
+}
