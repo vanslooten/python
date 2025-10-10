@@ -1,5 +1,6 @@
 # Dash Example: 5 Steps to Build a Simple Interactive Dashboard
 # 2nd version with external CSS
+# .css files will automatically be included from the assets directory (in alphanumerical order).
 
 # 5 steps:
 # 0. Load necessary libraries, setup the app, and run the app
@@ -90,3 +91,4 @@ def update_graph(selected_year):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
