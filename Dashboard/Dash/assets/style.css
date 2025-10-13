@@ -1,5 +1,13 @@
+html {
+	background: url('https://home.et.utwente.nl/slootenvanf/div/campusbg.png') no-repeat center center fixed;
+	background-size: cover;
+}
+
 body {
-    background-color: #708090;
+	margin: 50px 0;
+	padding: 0;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .dashboard-container {
