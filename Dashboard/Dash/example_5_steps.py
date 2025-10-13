@@ -24,7 +24,7 @@ import plotly.express as px
 # This ensures the data is loaded only once when the app starts,
 # rather than on every user interaction.
 # ---------------------------------------------------------------------------------
-# Load data from CSV (externalized from the previous inline DataFrame).
+# Load data from CSV.
 # The file `sales_data.csv` should be in the same directory as this script.
 df = pd.read_csv('sales_data.csv')
 
