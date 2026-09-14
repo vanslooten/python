@@ -1,5 +1,4 @@
 # https://www.w3schools.com/python/python_json.asp
-
 import json
 
 # a Python object (dict):
