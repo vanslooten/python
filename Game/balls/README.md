@@ -1,4 +1,4 @@
-Demonstration of OOP with bouncing balls using Pygame
+# Demonstration of OOP with bouncing balls using Pygame
 
 Instructions:
 1. Make sure you have Python installed (https://www.python.org/downloads/)
