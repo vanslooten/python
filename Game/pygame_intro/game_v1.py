@@ -1,3 +1,7 @@
+# Simple game loop using Pygame
+# install pygame using: pip install pygame
+# if you installed it in the global environment, you can run this script on a commamd line using: python game_v1.py
+
 import pygame
 from Player_v1 import Player
 

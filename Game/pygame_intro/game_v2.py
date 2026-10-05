@@ -1,4 +1,8 @@
-# added:
+# Simple game loop using Pygame
+# install pygame using: pip install pygame
+# if you installed it in the global environment, you can run this script on a commamd line using: python game_v2.py
+#
+# added in v2:
 # - Sprite class to Player_v2.py
 # - Obstacle class
 # - Smooth movement with key holds and bouncing off obstacles and walls
